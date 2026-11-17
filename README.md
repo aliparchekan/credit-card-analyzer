@@ -6,6 +6,8 @@ It reads CSV statements, can extract tables from PDF statements on a best-effort
 
 ## Web page
 
+**Try it: <https://aliparchekan.github.io/credit-card-analyzer/>**
+
 [`index.html`](index.html) is a simple page: enter your monthly spending and it ranks the cards live, entirely in the browser (no server, nothing sent anywhere). It uses the same scoring as the CLI ([`web/recommender.js`](web/recommender.js) mirrors [`src/recommender.py`](src/recommender.py)) and the same [`data/cards.json`](data/cards.json).
 
 Run it locally:
