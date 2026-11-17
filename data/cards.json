@@ -1,0 +1,134 @@
+{
+  "_comment": "Approximate Canadian card earn rates, expressed as percent cash-equivalent return. Points cards assume 1 cent per point. Issuers change terms often: verify on the issuer's website before applying, and edit this file freely.",
+  "last_reviewed": "2026-11",
+  "excluded_categories": ["Rent / Housing", "Transfer / Payment", "Financial Fees"],
+  "cards": [
+    {
+      "id": "amex-cobalt",
+      "name": "American Express Cobalt Card",
+      "issuer": "American Express",
+      "annual_fee": 191.88,
+      "base_rate": 1.0,
+      "tiers": [
+        {"label": "Eats & drinks (5x)", "categories": ["Groceries", "Restaurants", "Coffee"], "rate": 5.0, "annual_cap": 30000},
+        {"label": "Streaming (3x)", "categories": ["Subscriptions"], "rate": 3.0},
+        {"label": "Gas & transit (2x)", "categories": ["Gas / EV Charging", "Travel"], "rate": 2.0}
+      ],
+      "notes": "Membership Rewards valued at 1 cent; transfers to travel partners can be worth more. Amex is not accepted everywhere (e.g., Costco, Loblaws-owned stores)."
+    },
+    {
+      "id": "scotia-gold-amex",
+      "name": "Scotiabank Gold American Express Card",
+      "issuer": "Scotiabank",
+      "annual_fee": 120.0,
+      "base_rate": 1.0,
+      "tiers": [
+        {"label": "Groceries, dining, entertainment (5x)", "categories": ["Groceries", "Restaurants", "Coffee"], "rate": 5.0, "annual_cap": 50000},
+        {"label": "Gas, transit, streaming (3x)", "categories": ["Gas / EV Charging", "Travel", "Subscriptions"], "rate": 3.0}
+      ],
+      "notes": "Scene+ points valued at 1 cent. No foreign transaction fees. Amex acceptance limits apply."
+    },
+    {
+      "id": "amex-simplycash-preferred",
+      "name": "American Express SimplyCash Preferred Card",
+      "issuer": "American Express",
+      "annual_fee": 119.88,
+      "base_rate": 2.0,
+      "tiers": [
+        {"label": "Gas & groceries", "categories": ["Groceries", "Gas / EV Charging"], "rate": 4.0, "annual_cap": 30000}
+      ],
+      "notes": "Strong flat 2% on everything else. Amex acceptance limits apply."
+    },
+    {
+      "id": "amex-simplycash",
+      "name": "American Express SimplyCash Card",
+      "issuer": "American Express",
+      "annual_fee": 0.0,
+      "base_rate": 1.25,
+      "tiers": [
+        {"label": "Gas & groceries", "categories": ["Groceries", "Gas / EV Charging"], "rate": 2.0, "annual_cap": 15000}
+      ],
+      "notes": "No annual fee. Amex acceptance limits apply."
+    },
+    {
+      "id": "cibc-dividend-vi",
+      "name": "CIBC Dividend Visa Infinite Card",
+      "issuer": "CIBC",
+      "annual_fee": 120.0,
+      "base_rate": 1.0,
+      "tiers": [
+        {"label": "Groceries, gas & EV charging", "categories": ["Groceries", "Gas / EV Charging"], "rate": 4.0, "annual_cap": 80000},
+        {"label": "Dining, transport, recurring bills", "categories": ["Restaurants", "Coffee", "Travel", "Utilities", "Phone / Internet", "Subscriptions"], "rate": 2.0, "annual_cap": 80000}
+      ],
+      "notes": "Visa Infinite income requirements apply."
+    },
+    {
+      "id": "scotia-momentum-vi",
+      "name": "Scotia Momentum Visa Infinite Card",
+      "issuer": "Scotiabank",
+      "annual_fee": 120.0,
+      "base_rate": 1.0,
+      "tiers": [
+        {"label": "Groceries & recurring bills", "categories": ["Groceries", "Utilities", "Phone / Internet", "Subscriptions"], "rate": 4.0, "annual_cap": 25000},
+        {"label": "Gas & transit", "categories": ["Gas / EV Charging", "Travel"], "rate": 2.0, "annual_cap": 25000}
+      ],
+      "notes": "Visa Infinite income requirements apply."
+    },
+    {
+      "id": "bmo-cashback-we",
+      "name": "BMO CashBack World Elite Mastercard",
+      "issuer": "BMO",
+      "annual_fee": 120.0,
+      "base_rate": 1.0,
+      "tiers": [
+        {"label": "Groceries", "categories": ["Groceries"], "rate": 5.0, "annual_cap": 6000},
+        {"label": "Gas & EV charging", "categories": ["Gas / EV Charging"], "rate": 3.0, "annual_cap": 3600},
+        {"label": "Recurring bills", "categories": ["Utilities", "Phone / Internet", "Subscriptions"], "rate": 2.0, "annual_cap": 6000}
+      ],
+      "notes": "Caps are monthly at the issuer ($500 groceries, $300 gas, $500 bills); modelled here as annual equivalents. World Elite income requirements apply."
+    },
+    {
+      "id": "simplii-cashback",
+      "name": "Simplii Financial Cash Back Visa Card",
+      "issuer": "Simplii Financial",
+      "annual_fee": 0.0,
+      "base_rate": 0.5,
+      "tiers": [
+        {"label": "Restaurants & bars", "categories": ["Restaurants", "Coffee"], "rate": 4.0, "annual_cap": 5000},
+        {"label": "Groceries, gas, drugstore, pre-authorized", "categories": ["Groceries", "Gas / EV Charging", "Health", "Utilities", "Phone / Internet", "Subscriptions"], "rate": 1.5, "annual_cap": 15000}
+      ],
+      "notes": "No annual fee."
+    },
+    {
+      "id": "tangerine-money-back",
+      "name": "Tangerine Money-Back Credit Card",
+      "issuer": "Tangerine",
+      "annual_fee": 0.0,
+      "base_rate": 0.5,
+      "tiers": [],
+      "choose": {
+        "n": 2,
+        "rate": 2.0,
+        "options": {
+          "Groceries": ["Groceries"],
+          "Restaurants": ["Restaurants", "Coffee"],
+          "Gas": ["Gas / EV Charging"],
+          "Recurring bills": ["Utilities", "Phone / Internet", "Subscriptions"],
+          "Drugstore": ["Health"],
+          "Hotel / transit": ["Travel"]
+        }
+      },
+      "notes": "You pick 2 categories at 2% (3 if rewards are deposited into a Tangerine savings account). No annual fee."
+    },
+    {
+      "id": "rogers-red-we",
+      "name": "Rogers Red World Elite Mastercard",
+      "issuer": "Rogers Bank",
+      "annual_fee": 0.0,
+      "base_rate": 1.5,
+      "tiers": [],
+      "min_annual_spend": 15000,
+      "notes": "Flat 1.5% with no annual fee; requires about $15,000 of yearly card spend."
+    }
+  ]
+}

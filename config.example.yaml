@@ -1,0 +1,17 @@
+# Local-only credit card analyzer configuration.
+# The parser intentionally supports simple top-level key: value pairs.
+
+input_dir: input
+output_dir: output
+
+ollama_url: http://localhost:11434
+ollama_model: qwen3:30b-a3b
+ollama_fallback_model: qwen3:14b
+request_timeout_seconds: 60
+
+classification_cache: output/classification_cache.json
+low_confidence_threshold: 0.65
+
+
+# Card earn-rate data for recommendations (defaults to data/cards.json).
+# cards_file: data/cards.json
