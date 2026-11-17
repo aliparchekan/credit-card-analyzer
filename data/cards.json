@@ -1,7 +1,11 @@
 {
-  "_comment": "Approximate Canadian card earn rates, expressed as percent cash-equivalent return. Points cards assume 1 cent per point. Issuers change terms often: verify on the issuer's website before applying, and edit this file freely.",
-  "last_reviewed": "2026-11",
-  "excluded_categories": ["Rent / Housing", "Transfer / Payment", "Financial Fees"],
+  "_comment": "Canadian card earn rates, expressed as percent cash-equivalent return. Points cards assume 1 cent per point. Checked against issuer pages and recent reviews on 2026-11-17 (see each card's source). Issuers change terms often: verify before applying, and edit this file freely.",
+  "last_reviewed": "2026-11-17",
+  "excluded_categories": [
+    "Rent / Housing",
+    "Transfer / Payment",
+    "Financial Fees"
+  ],
   "cards": [
     {
       "id": "amex-cobalt",
@@ -10,11 +14,34 @@
       "annual_fee": 191.88,
       "base_rate": 1.0,
       "tiers": [
-        {"label": "Eats & drinks (5x)", "categories": ["Groceries", "Restaurants", "Coffee"], "rate": 5.0, "annual_cap": 30000},
-        {"label": "Streaming (3x)", "categories": ["Subscriptions"], "rate": 3.0},
-        {"label": "Gas & transit (2x)", "categories": ["Gas / EV Charging", "Travel"], "rate": 2.0}
+        {
+          "label": "Eats & drinks (5x)",
+          "categories": [
+            "Groceries",
+            "Restaurants",
+            "Coffee"
+          ],
+          "rate": 5.0,
+          "annual_cap": 30000
+        },
+        {
+          "label": "Streaming (3x)",
+          "categories": [
+            "Subscriptions"
+          ],
+          "rate": 3.0
+        },
+        {
+          "label": "Gas & transit (2x)",
+          "categories": [
+            "Gas / EV Charging",
+            "Travel"
+          ],
+          "rate": 2.0
+        }
       ],
-      "notes": "Membership Rewards valued at 1 cent; transfers to travel partners can be worth more. Amex is not accepted everywhere (e.g., Costco, Loblaws-owned stores)."
+      "notes": "5x on groceries, restaurants and food delivery shares one $2,500/month cap. Membership Rewards valued at 1 cent; transfers to travel partners can be worth more. Amex is not accepted everywhere (e.g., Costco, Loblaws-owned stores).",
+      "source": "https://www.americanexpress.com/en-ca/credit-cards/cobalt-card/"
     },
     {
       "id": "scotia-gold-amex",
@@ -23,10 +50,28 @@
       "annual_fee": 120.0,
       "base_rate": 1.0,
       "tiers": [
-        {"label": "Groceries, dining, entertainment (5x)", "categories": ["Groceries", "Restaurants", "Coffee"], "rate": 5.0, "annual_cap": 50000},
-        {"label": "Gas, transit, streaming (3x)", "categories": ["Gas / EV Charging", "Travel", "Subscriptions"], "rate": 3.0}
+        {
+          "label": "Groceries, dining, entertainment (5x)",
+          "categories": [
+            "Groceries",
+            "Restaurants",
+            "Coffee"
+          ],
+          "rate": 5.0,
+          "annual_cap": 50000
+        },
+        {
+          "label": "Gas, transit, streaming (3x)",
+          "categories": [
+            "Gas / EV Charging",
+            "Travel",
+            "Subscriptions"
+          ],
+          "rate": 3.0
+        }
       ],
-      "notes": "Scene+ points valued at 1 cent. No foreign transaction fees. Amex acceptance limits apply."
+      "notes": "6x (modelled as 5x) at Sobeys-family grocers. Accelerated rates on the first $50,000/calendar year, Canadian-dollar purchases only. Scene+ points valued at 1 cent. No foreign transaction fees. Amex acceptance limits apply.",
+      "source": "https://www.scotiabank.com/ca/en/personal/credit-cards/american-express/gold-card.html"
     },
     {
       "id": "amex-simplycash-preferred",
@@ -35,9 +80,24 @@
       "annual_fee": 119.88,
       "base_rate": 2.0,
       "tiers": [
-        {"label": "Gas & groceries", "categories": ["Groceries", "Gas / EV Charging"], "rate": 4.0, "annual_cap": 30000}
+        {
+          "label": "Groceries (4%)",
+          "categories": [
+            "Groceries"
+          ],
+          "rate": 4.0,
+          "annual_cap": 30000
+        },
+        {
+          "label": "Gas (4%)",
+          "categories": [
+            "Gas / EV Charging"
+          ],
+          "rate": 4.0
+        }
       ],
-      "notes": "Strong flat 2% on everything else. Amex acceptance limits apply."
+      "notes": "Grocery cash back capped at $1,200/yr ($30,000 of spend); gas is uncapped. Flat 2% on everything else. Amex acceptance limits apply.",
+      "source": "https://www.americanexpress.com/en-ca/credit-cards/simply-cash-preferred/"
     },
     {
       "id": "amex-simplycash",
@@ -46,9 +106,24 @@
       "annual_fee": 0.0,
       "base_rate": 1.25,
       "tiers": [
-        {"label": "Gas & groceries", "categories": ["Groceries", "Gas / EV Charging"], "rate": 2.0, "annual_cap": 15000}
+        {
+          "label": "Groceries (2%)",
+          "categories": [
+            "Groceries"
+          ],
+          "rate": 2.0,
+          "annual_cap": 15000
+        },
+        {
+          "label": "Gas (2%)",
+          "categories": [
+            "Gas / EV Charging"
+          ],
+          "rate": 2.0
+        }
       ],
-      "notes": "No annual fee. Amex acceptance limits apply."
+      "notes": "Grocery cash back capped at $300/yr ($15,000 of spend). No annual fee. Amex acceptance limits apply.",
+      "source": "https://www.americanexpress.com/en-ca/credit-cards/simply-cash/"
     },
     {
       "id": "cibc-dividend-vi",
@@ -57,10 +132,29 @@
       "annual_fee": 120.0,
       "base_rate": 1.0,
       "tiers": [
-        {"label": "Groceries, gas & EV charging", "categories": ["Groceries", "Gas / EV Charging"], "rate": 4.0, "annual_cap": 80000},
-        {"label": "Dining, transport, recurring bills", "categories": ["Restaurants", "Coffee", "Travel", "Utilities", "Phone / Internet", "Subscriptions"], "rate": 2.0, "annual_cap": 80000}
+        {
+          "label": "Groceries, gas & EV charging",
+          "categories": [
+            "Groceries",
+            "Gas / EV Charging"
+          ],
+          "rate": 4.0
+        },
+        {
+          "label": "Dining, transport, recurring bills",
+          "categories": [
+            "Restaurants",
+            "Coffee",
+            "Travel",
+            "Utilities",
+            "Phone / Internet",
+            "Subscriptions"
+          ],
+          "rate": 2.0
+        }
       ],
-      "notes": "Visa Infinite income requirements apply."
+      "notes": "No cap on cash back. First-year fee rebated for new cardholders. Visa Infinite income requirements apply.",
+      "source": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/dividend-visa-infinite-card.html"
     },
     {
       "id": "scotia-momentum-vi",
@@ -69,23 +163,66 @@
       "annual_fee": 120.0,
       "base_rate": 1.0,
       "tiers": [
-        {"label": "Groceries & recurring bills", "categories": ["Groceries", "Utilities", "Phone / Internet", "Subscriptions"], "rate": 4.0, "annual_cap": 25000},
-        {"label": "Gas & transit", "categories": ["Gas / EV Charging", "Travel"], "rate": 2.0, "annual_cap": 25000}
+        {
+          "label": "Groceries & recurring bills",
+          "categories": [
+            "Groceries",
+            "Utilities",
+            "Phone / Internet",
+            "Subscriptions"
+          ],
+          "rate": 4.0,
+          "annual_cap": 25000
+        },
+        {
+          "label": "Gas & transit",
+          "categories": [
+            "Gas / EV Charging",
+            "Travel"
+          ],
+          "rate": 2.0,
+          "annual_cap": 25000
+        }
       ],
-      "notes": "Visa Infinite income requirements apply."
+      "notes": "2% tier also covers food delivery. Each accelerated tier is limited to $25,000/yr of spend. Visa Infinite income requirements apply.",
+      "source": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/momentum-infinite-card.html"
     },
     {
       "id": "bmo-cashback-we",
       "name": "BMO CashBack World Elite Mastercard",
       "issuer": "BMO",
-      "annual_fee": 120.0,
+      "annual_fee": 139.0,
       "base_rate": 1.0,
       "tiers": [
-        {"label": "Groceries", "categories": ["Groceries"], "rate": 5.0, "annual_cap": 6000},
-        {"label": "Gas & EV charging", "categories": ["Gas / EV Charging"], "rate": 3.0, "annual_cap": 3600},
-        {"label": "Recurring bills", "categories": ["Utilities", "Phone / Internet", "Subscriptions"], "rate": 2.0, "annual_cap": 6000}
+        {
+          "label": "Groceries",
+          "categories": [
+            "Groceries"
+          ],
+          "rate": 5.0,
+          "annual_cap": 6000
+        },
+        {
+          "label": "Gas & EV charging",
+          "categories": [
+            "Gas / EV Charging"
+          ],
+          "rate": 3.0,
+          "annual_cap": 3600
+        },
+        {
+          "label": "Recurring bills",
+          "categories": [
+            "Utilities",
+            "Phone / Internet",
+            "Subscriptions"
+          ],
+          "rate": 2.0,
+          "annual_cap": 6000
+        }
       ],
-      "notes": "Caps are monthly at the issuer ($500 groceries, $300 gas, $500 bills); modelled here as annual equivalents. World Elite income requirements apply."
+      "notes": "Annual fee rose from $120 to $139 in June 2026 (first year often waived). Caps are monthly at the issuer ($500 groceries; gas and bill caps not re-verified); modelled here as annual equivalents. World Elite income requirements apply.",
+      "source": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-cashback-world-elite-mastercard/"
     },
     {
       "id": "simplii-cashback",
@@ -94,10 +231,31 @@
       "annual_fee": 0.0,
       "base_rate": 0.5,
       "tiers": [
-        {"label": "Restaurants & bars", "categories": ["Restaurants", "Coffee"], "rate": 4.0, "annual_cap": 5000},
-        {"label": "Groceries, gas, drugstore, pre-authorized", "categories": ["Groceries", "Gas / EV Charging", "Health", "Utilities", "Phone / Internet", "Subscriptions"], "rate": 1.5, "annual_cap": 15000}
+        {
+          "label": "Restaurants & bars",
+          "categories": [
+            "Restaurants",
+            "Coffee"
+          ],
+          "rate": 4.0,
+          "annual_cap": 5000
+        },
+        {
+          "label": "Groceries, gas, drugstore, pre-authorized",
+          "categories": [
+            "Groceries",
+            "Gas / EV Charging",
+            "Health",
+            "Utilities",
+            "Phone / Internet",
+            "Subscriptions"
+          ],
+          "rate": 1.5,
+          "annual_cap": 15000
+        }
       ],
-      "notes": "No annual fee."
+      "notes": "No annual fee. 4% on restaurants, bars and coffee shops up to $5,000/yr; 1.5% tier up to $15,000/yr.",
+      "source": "https://www.simplii.com/en/credit-cards/cash-back-visa.html"
     },
     {
       "id": "tangerine-money-back",
@@ -110,15 +268,31 @@
         "n": 2,
         "rate": 2.0,
         "options": {
-          "Groceries": ["Groceries"],
-          "Restaurants": ["Restaurants", "Coffee"],
-          "Gas": ["Gas / EV Charging"],
-          "Recurring bills": ["Utilities", "Phone / Internet", "Subscriptions"],
-          "Drugstore": ["Health"],
-          "Hotel / transit": ["Travel"]
+          "Groceries": [
+            "Groceries"
+          ],
+          "Restaurants": [
+            "Restaurants",
+            "Coffee"
+          ],
+          "Gas": [
+            "Gas / EV Charging"
+          ],
+          "Recurring bills": [
+            "Utilities",
+            "Phone / Internet",
+            "Subscriptions"
+          ],
+          "Drugstore": [
+            "Health"
+          ],
+          "Hotel / transit": [
+            "Travel"
+          ]
         }
       },
-      "notes": "You pick 2 categories at 2% (3 if rewards are deposited into a Tangerine savings account). No annual fee."
+      "notes": "Pick 2 categories at 2% (3 if rewards go to a Tangerine savings account); categories can be changed every 90 days. Also offers entertainment, furniture, home improvement, fitness and foreign-currency categories, which this tool doesn't track separately. No annual fee.",
+      "source": "https://www.tangerine.ca/en/products/spending/creditcard/money-back"
     },
     {
       "id": "rogers-red-we",
@@ -127,8 +301,8 @@
       "annual_fee": 0.0,
       "base_rate": 1.5,
       "tiers": [],
-      "min_annual_spend": 15000,
-      "notes": "Flat 1.5% with no annual fee; requires about $15,000 of yearly card spend."
+      "notes": "1.5% for non-Rogers customers (3% on USD purchases). Rogers/Fido/Shaw customers get 2%, and from Nov 18, 2026 up to 5% on Rogers bills, on the first $61,000/yr. No annual fee; World Elite income requirements apply.",
+      "source": "https://www.rogersbank.com/en/rogers_red_worldelite_details"
     }
   ]
 }
