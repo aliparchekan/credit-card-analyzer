@@ -221,7 +221,7 @@
           "annual_cap": 6000
         }
       ],
-      "notes": "Annual fee rose from $120 to $139 in June 2026 (first year often waived). Caps are monthly at the issuer ($500 groceries; gas and bill caps not re-verified); modelled here as annual equivalents. World Elite income requirements apply.",
+      "notes": "Annual fee rose from $120 to $139 in June 2026 (first year often waived). Bonus rates apply per statement up to $500 groceries, $300 gas/EV and $500 recurring bills, then 1%; modelled here as annual equivalents. World Elite income requirements apply.",
       "source": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-cashback-world-elite-mastercard/"
     },
     {
@@ -301,7 +301,7 @@
       "annual_fee": 0.0,
       "base_rate": 1.5,
       "tiers": [],
-      "notes": "1.5% for non-Rogers customers (3% on USD purchases). Rogers/Fido/Shaw customers get 2%, and from Nov 18, 2026 up to 5% on Rogers bills, on the first $61,000/yr. No annual fee; World Elite income requirements apply.",
+      "notes": "1.5% on everything without an eligible Rogers service (3% on USD purchases). Rogers/Fido/Shaw customers get 2% on the first $61,000/yr. From Nov 18, 2026, all Rogers Red cardholders earn 5% on eligible Rogers purchases. No annual fee; World Elite income requirements apply.",
       "source": "https://www.rogersbank.com/en/rogers_red_worldelite_details"
     }
   ]
