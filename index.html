@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Which credit card fits your spending?</title>
+  <meta name="description" content="Enter your monthly spending and see which Canadian credit card earns you the most, after annual fees. Runs entirely in your browser.">
+  <link rel="stylesheet" href="web/style.css">
+</head>
+<body>
+  <header class="intro">
+    <h1>Which credit card fits your spending?</h1>
+    <p>Enter roughly what you spend each month. We rank Canadian cards by what they'd earn you in a year, minus the annual fee.
+      <span class="private">Everything is calculated in your browser. Nothing is sent anywhere.</span></p>
+  </header>
+
+  <main class="layout">
+    <form id="spend-form" class="panel" autocomplete="off" aria-labelledby="spend-heading">
+      <div class="panel-head">
+        <h2 id="spend-heading">Monthly spending</h2>
+        <button type="button" id="clear" class="link-button">Clear all</button>
+      </div>
+      <div id="fields"></div>
+      <div class="total">
+        <span>Total per month</span>
+        <strong id="total">$0</strong>
+      </div>
+      <p class="hint">Leave out rent, mortgage and card payments. They usually can't go on a credit card.</p>
+    </form>
+
+    <section id="results" class="results" aria-live="polite">
+      <p class="empty">Loading card data…</p>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p id="disclaimer">Earn rates are checked against issuer websites but change often. Points are valued at 1 cent each. This is an estimate, not financial advice. Confirm the terms with the issuer before you apply.</p>
+    <p><a href="https://github.com/aliparchekan/credit-card-analyzer">Source code on GitHub</a> · You can also analyze your actual statements with the command-line tool there.</p>
+  </footer>
+
+  <script src="web/recommender.js"></script>
+  <script src="web/app.js"></script>
+</body>
+</html>

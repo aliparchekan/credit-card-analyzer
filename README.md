@@ -4,6 +4,18 @@ Privacy-first local Python tool that works out where your money goes and **which
 
 It reads CSV statements, can extract tables from PDF statements on a best-effort basis, classifies transactions with deterministic rules plus a local Ollama model, and writes Excel and Markdown reports with card recommendations.
 
+## Web page
+
+[`index.html`](index.html) is a simple page: enter your monthly spending and it ranks the cards live, entirely in the browser (no server, nothing sent anywhere). It uses the same scoring as the CLI ([`web/recommender.js`](web/recommender.js) mirrors [`src/recommender.py`](src/recommender.py)) and the same [`data/cards.json`](data/cards.json).
+
+Run it locally:
+
+```bash
+python3 -m http.server 8000
+```
+
+Then open <http://localhost:8000>.
+
 ## Quick start: which card should I get?
 
 No statements or Ollama needed:
